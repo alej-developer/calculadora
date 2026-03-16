@@ -13,3 +13,10 @@ def multiplicar(a, b):
 print("Bienvenido a la Calculadora")
 print(f"La suma de 5 + 3 es: {sumar(5, 3)}")
 print(f"La resta de 10 - 4 es: {restar(10, 4)}")
+
+def dividir(a, b):
+    if b == 0:
+        return "Error: No se puede dividir por cero"
+    return a / b
+
+print(f"La división de 10 / 2 es: {dividir(10, 2)}")
