@@ -4,3 +4,12 @@ def sumar(a, b):
 print("Bienvenido a la calculadora")
 print (f"La suma de 5 + 3 es: {sumar(5, 3,)}")
 
+def restar(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+print("Bienvenido a la Calculadora")
+print(f"La suma de 5 + 3 es: {sumar(5, 3)}")
+print(f"La resta de 10 - 4 es: {restar(10, 4)}")
