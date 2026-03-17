@@ -3,7 +3,7 @@ import math
 def sumar(a, b):
     return a + b
 
-print("Bienvenido a la calculadora")
+print("🤖 BIENVENIDO A LA SÚPER CALCULADORA BÁSICA 🤖")
 print (f"La suma de 5 + 3 es: {sumar(5, 3,)}")
 
 def restar(a, b):
@@ -12,7 +12,7 @@ def restar(a, b):
 def multiplicar(a, b):
     return a * b
 
-print("Bienvenido a la Calculadora")
+print("🤖 BIENVENIDO A LA SÚPER CALCULADORA BÁSICA 🤖")
 print(f"La suma de 5 + 3 es: {sumar(5, 3)}")
 print(f"La resta de 10 - 4 es: {restar(10, 4)}")
 
