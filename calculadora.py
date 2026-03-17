@@ -20,3 +20,9 @@ def dividir(a, b):
     return a / b
 
 print(f"La división de 10 / 2 es: {dividir(10, 2)}")
+
+def potencia(a, b):
+    return a ** b
+
+print(f"La potencia de 2 elevado a 3 es: {potencia(2, 3)}")
+
