@@ -1,3 +1,5 @@
+import math 
+
 def sumar(a, b):
     return a + b
 
@@ -25,4 +27,11 @@ def potencia(a, b):
     return a ** b
 
 print(f"La potencia de 2 elevado a 3 es: {potencia(2, 3)}")
+
+def raiz_cuadrada(a):
+    if a < 0:
+        return "Error: No se puede calcular la raíz de un número negativo"
+    return math.sqrt(a)
+
+print(f"La raíz cuadrada de 16 es: {raiz_cuadrada(16)}")
 
