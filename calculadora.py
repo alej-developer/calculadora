@@ -1,30 +1,30 @@
 import math 
 
-def sumar(a, b):
-    return a + b
+def sumar(num1, num2):
+    return num1 + num2
 
 print("🤖 BIENVENIDO A LA SÚPER CALCULADORA BÁSICA 🤖")
 
-def restar(a, b):
-    return a - b
+def restar(num1, num2):
+    return num1 - num2
 
-def multiplicar(a, b):
-    return a * b
+def multiplicar(num1, num2):
+    return num1 * num2
 
 print("🤖 BIENVENIDO A LA SÚPER CALCULADORA BÁSICA 🤖")
 
-def dividir(a, b):
-    if b == 0:
+def dividir(num1, num2):
+    if num2 == 0:
         return "Error: No se puede dividir por cero"
-    return a / b
+    return num1 / num2
 
-def potencia(a, b):
-    return a ** b
+def potencia(num1, num2):
+    return num1 ** num2
 
-def raiz_cuadrada(a):
-    if a < 0:
+def raiz_cuadrada(num1):
+    if num1 < 0:
         return "Error: No se puede calcular la raíz de un número negativo"
-    return math.sqrt(a)
+    return math.sqrt(num1)
 
 print("===================================")
 print(" 🧮🤖  CALCULADORA INTERACTIVA v2.0 🤖🧮 ")
@@ -38,6 +38,10 @@ while True:
         print("¡Gracias por usar la calculadora! Hasta luego.")
         break
 
+    if opcion in ['1', '2', '3', '4']:
+        num1 = float(input("Ingresa el primer número: "))
+        num2 = float(input("Ingresa el segundo número"))
+        
     if opcion == '1':
         print(f"👉 Resultado: {sumar(num1, num2)}")
     elif opcion == '2':
