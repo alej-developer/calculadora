@@ -37,24 +37,26 @@ while True:
         break
 
     if opcion in ['1', '2', '3', '4', '5', '6']:
+        try: 
+            if opcion == '6': 
+                num1 = float(input("Ingresa el número: "))
+                print(f"👉 Resultado: {raiz_cuadrada(num1)}")
 
-        if opcion == '6': 
-            num1 = float(input("Ingresa el número: "))
-            print(f"👉 Resultado: {raiz_cuadrada(num1)}")
-
-        else:
-            num1 = float(input("Ingresa el primer número: "))
-            num2 = float(input("Ingresa el segundo número: "))
-        
-            if opcion == '1':
-                print(f"👉 Resultado: {sumar(num1, num2)}")
-            elif opcion == '2':
-                print(f"👉 Resultado: {restar(num1, num2)}")
-            elif opcion == '3':
-                print(f"👉 Resultado: {multiplicar(num1, num2)}")
-            elif opcion == '4':
-                print(f"👉 Resultado: {dividir(num1, num2)}")
-            elif opcion == '5':
-                print(f"👉 Resultado: {potencia(num1, num2)}")
+            else:
+                num1 = float(input("Ingresa el primer número: "))
+                num2 = float(input("Ingresa el segundo número: "))
+            
+                if opcion == '1':
+                    print(f"👉 Resultado: {sumar(num1, num2)}")
+                elif opcion == '2':
+                    print(f"👉 Resultado: {restar(num1, num2)}")
+                elif opcion == '3':
+                    print(f"👉 Resultado: {multiplicar(num1, num2)}")
+                elif opcion == '4':
+                    print(f"👉 Resultado: {dividir(num1, num2)}")
+                elif opcion == '5':
+                    print(f"👉 Resultado: {potencia(num1, num2)}")
+        except ValueError:
+            print("❌ ¡Error! Por favor, ingresa solo números válidos (ej. 5 o 3.14).")
     else:
         print("❌ Opción inválida. Por favor, vuelve a intentar.")
