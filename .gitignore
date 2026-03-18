@@ -1,0 +1,14 @@
+# Ignorar carpetas de caché que genera Python automáticamente
+__pycache__/
+*.py[cod]
+
+# Ignorar entornos virtuales (muy común en proyectos más grandes)
+venv/
+env/
+
+# Ignorar archivos ocultos del sistema operativo (Windows / Mac)
+Thumbs.db
+.DS_Store
+
+# Ignorar configuraciones locales del editor de código (ej. VS Code)
+.vscode/
